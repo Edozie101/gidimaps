@@ -22,8 +22,7 @@
 
 $("#emailform").submit(function(event) {
       var email = $( 'input#exampleInputEmail1' ).val(),
-      url = $("#emailform").attr( 'action' );
-      var posting = $.post( url, { Email: email} );
+      var posting = $.post( 'email_path', { Email: email} );
       posting.done(function( data ) {
         // $("#results").append( html );
         alert('We did it scotty!')
