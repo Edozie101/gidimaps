@@ -5,4 +5,12 @@ class ApplicationController < ActionController::Base
 
   def index
   end
+
+  def countdown
+
+  end
+  def email
+    
+
+  end
 end
