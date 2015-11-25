@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 
   end
   def email
-    
+    @email  = params["Email"]
 
   end
 end
