@@ -5,27 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
     root 'application#countdown'
-    post 'application#email' do
-      require 'pony'
-      Pony.mail({
-      :to => @email ,
-      :from => 'edozie@gidimaps.com',
-       :subject => 'Thank You',
-       :body => 'Thanks for signing up to Gidimaps we will notify you of any updates of our development! '
-       :via => :smtp,
-        :via_options => {
-          :address => 'smtp.sendgrid.net',
-          :port => '587',
-          :domain => 'heroku.com',
-          :user_name => ENV['SENDGRID_USERNAME'],
-          :password => ENV['SENDGRID_PASSWORD'],
-          :authentication => :plain,
-          :enable_starttls_auto => true
-        }
-       
-        })
-
-    end
+    post 'application#email'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
