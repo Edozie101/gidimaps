@@ -110,6 +110,7 @@ form.signup input  {
 	width: 200px;
 	border-radius: 0;
 	border: none;
+	margin: 0 auto;
 }
 form.signup button.btn {
 	font-weight: 700;
