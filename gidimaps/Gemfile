@@ -29,7 +29,6 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'puma'
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -40,4 +39,4 @@ gem 'puma'
 # gem 'debugger', group: [:development, :test]
 
 gem 'puma'
-ruby "2.2.0"
+
