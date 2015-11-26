@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['HEROKU_POSTGRESQL_PUCE_URL'] %>
   database: gidimaps_production
   username: gidimaps
   password: <%= ENV['GIDIMAPS_DATABASE_PASSWORD'] %>
